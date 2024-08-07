@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+/* import Player from './Component/Player';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Players from './Component/Players'; */
+import PlayersList from './Component/PlayersList';
 
-export default App;
+
+    const App = () => {
+      return (
+        /**.................sans utiliser le componemt playerlist.......... */
+         <div className="App">
+          {/*<div className="d-flex  justify-content-center">
+            {Players.map((player, index) => (
+              <Player
+                key={index}
+                name={player.name}
+                team={player.team}
+                nationality={player.nationality}
+                num={player.num}
+                age={player.age}
+                imageURL={player.imageURL}
+              />
+            ))}
+            </div>
+            */}
+          <h1>FIFA Player Cards</h1>
+            <PlayersList/>
+
+          
+        </div> 
+        
+      );
+    };
+    
+    export default App;

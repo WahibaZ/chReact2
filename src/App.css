@@ -1,3 +1,11 @@
+
+
+.card-img-top {
+  
+  height: 70%; 
+  object-fit: cover; /* Cela s'assure que l'image remplisse le conteneur tout en conservant son aspect ratio */
+}
+
 .App {
   text-align: center;
 }
